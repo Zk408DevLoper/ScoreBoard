@@ -1,3 +1,4 @@
+
 <?php
 
 namespace ScoreBoard;
@@ -61,6 +62,8 @@ class ScoreBoard extends PluginBase implements Listener{
 			    $msg = str_replace("{hour}", date("H"), $msg);
 			    $msg = str_replace("{minute}", date("i"), $msg);
 			    $msg = str_replace("{seconds}", date("s"), $msg);
+			    $msg = str_replace("{health}", $p->getHealth(), $msg);
+			    $msg = str_replace("{line}", "\n", $msg);
             	$p->sendTip("$msg");
             }
         }
