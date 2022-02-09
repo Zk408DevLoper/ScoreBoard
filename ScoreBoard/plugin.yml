@@ -1,0 +1,5 @@
+name: ScoreBoard+
+api: 2.0.0
+author: Skiddy2
+main: ScoreBoard\ScoreBoard
+version: 1.0.0
